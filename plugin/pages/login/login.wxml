@@ -1,0 +1,4 @@
+<!--plugin/pages/login/login.wxml-->
+<input placeholder="账号" bindinput="bindInput" data-key="account"/>
+<input placeholder="密码" bindinput="bindInput" data-key="password"/>
+<button bindtap="login" >登录</button>

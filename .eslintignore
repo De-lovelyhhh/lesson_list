@@ -1,0 +1,3 @@
+plugin/utils/third-party/*
+miniprogram/utils/third-party/*
+node_modules/**

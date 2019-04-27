@@ -1,0 +1,2 @@
+<!--plugin/pages/authorize/authorize.wxml-->
+<button bindtap="authorize">授权</button>

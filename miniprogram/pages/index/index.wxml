@@ -1,0 +1,2 @@
+<button bindtap="Stulogin">校园账号登陆</button>
+<button bindtap="getInfo">获取信息</button>

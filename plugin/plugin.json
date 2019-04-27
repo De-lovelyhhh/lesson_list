@@ -1,0 +1,7 @@
+{
+  "main": "index.js",
+  "pages": {
+    "login": "pages/login/login",
+    "authorize": "pages/authorize/authorize"
+  }
+}
