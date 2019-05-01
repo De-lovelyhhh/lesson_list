@@ -18,4 +18,4 @@ module.exports = {
         // 分号
         "semi": ['error', 'never'],
     }
-}
+};

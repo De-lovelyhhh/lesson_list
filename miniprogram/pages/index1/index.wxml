@@ -1,0 +1,20 @@
+<!--index1.wxml-->
+<view class="date">2019-04</view>
+<view class='dayBar'>
+    <view wx:for='{{dayList}}' wx:key='index' class="dayItem ">
+        <view class="{{index===weekday?'background':''}}" bindtap="changeDay" data-index="{{index}}">{{item}}</view>
+    </view>
+</view>
+<view class="page__bd page__bd_spacing" wx:if="{{classList[weekday].length!==0 && !isEmpty}}">
+    <view class="kind-list">
+        <block wx:for="{{classList[weekday]}}" wx:key="index">
+            <view class="kind-list__item">
+                <view class="kind-list__item-hd detail" wx:if="{{item.classWeek[21-week]==='1'}}">
+                    <view class="weui-flex__item" style="font-size:larger">{{item.className}}</view>
+                    <view class='time'>{{item.classBeginTime}}-{{item.classEndTime}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<view wx:else class="blank">哎呀怎么没有课啊</view>

@@ -1,8 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/dayline/index"
+    "pages/index1/index",
+    "pages/logs/logs",
+    "pages/me/me"
   ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
   "plugins": {
     "myPlugin": {
       "version": "dev",

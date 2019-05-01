@@ -1,7 +1,9 @@
 {
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
 	"miniprogramRoot": "miniprogram/",
-	"pluginRoot": "plugin/",
-	"compileType": "plugin",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -10,7 +12,31 @@
 		"newFeature": true,
 		"autoAudits": false
 	},
+	"compileType": "plugin",
+	"libVersion": "2.5.1",
+	"pluginRoot": "plugin/",
 	"appid": "wxc44210f342bb2758",
-	"projectname": "stuOauthPlug",
-	"condition": {}
+	"projectname": "%E7%BA%BF%E7%A8%8B%E6%A1%86%E5%9B%BE2.0",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
 }

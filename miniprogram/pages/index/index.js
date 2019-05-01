@@ -149,7 +149,7 @@ Page({
                 console.log('user_info', res.data.user_info)
                 this.setData({ info: res.data.user_info })
                 wx.navigateTo({
-                    url: '../dayline/index'
+                    url: '../dayline/index1'
                 })
             }
             else {
