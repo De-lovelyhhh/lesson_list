@@ -1,0 +1,21 @@
+<view vertical="true" class="SwiperContainer" xmlns:wx="">
+    <view class="swiperItem">
+        <view class='row'>
+            <view class="table-grid" wx:for='{{week}}' wx:key='*this'>
+                <view class="week cell">{{item}}</view>
+            </view>
+            <view class="class-cell" wx:for="{{ timeTable }}" wx:key="id" wx:if="{{ item.week }}"
+                  style='position:absolute;top:{{ item.top*7.14+0.25 }}%;left:{{item.left*12.5+0.25}}%;width:12%;height:{{item.height*7.14-0.5}}%;background-color:{{item.color}};border-radius:10rpx;line-height:25rpx;'>
+                <view class="className">{{item.className}}</view>
+                <view class="className">@{{item.room}}</view>
+            </view>
+        </view>
+        <view style='position: relative'>
+            <view class='row' wx:for="{{times}}" wx:key="*this">
+                <view class="table-grid">
+                    <view class="cell">{{item}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

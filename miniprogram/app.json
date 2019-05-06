@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/index1/index",
     "pages/logs/logs",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/weeklyTimeTable/weeklyTimetable"
   ],
   "window": {
     "backgroundTextStyle": "light",

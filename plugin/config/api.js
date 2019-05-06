@@ -1,4 +1,4 @@
-const oauthHost = 'http://139.199.224.230:7001'
+const oauthHost = 'http://10.22.26.169:7001'
 
 const api = {
     login: oauthHost + '/oauth/login',  // 汕头大学账号账号密码验证

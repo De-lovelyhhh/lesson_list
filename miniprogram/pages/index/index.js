@@ -21,7 +21,7 @@ Page({
         let res
         try {
             res = await wxRequest({
-                url: 'http://139.199.224.230:7002/user/get_oauth_data',
+                url: 'http://10.22.26.169:7002/user/get_oauth_data',
                 data: { from: 'mini' }
             })
         } catch (e) {
@@ -68,7 +68,7 @@ Page({
             res = await wxRequest({
                 url: redirect_uri,
                 method: 'GET',
-                data: { code: code, state: state, from: 'mini' },
+                data: { code: code, state: state, from: 'app' },
                 header: { cookie: `${this.syllabusSession.name}=${this.syllabusSession.value}` },
             })
         } catch (e) {
@@ -137,7 +137,7 @@ Page({
             let res
             try {
                 res = await wxRequest({
-                    url: 'http://139.199.224.230:7002/user/info',
+                    url: 'http://10.22.26.169:7002/user/info',
                     method: 'POST',
                     header: { skey: this.skey.skey }
                 })
