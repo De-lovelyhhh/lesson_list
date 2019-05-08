@@ -21,7 +21,7 @@ Page({
         let res
         try {
             res = await wxRequest({
-                url: 'http://10.22.26.169:7002/user/get_oauth_data',
+                url: 'http://139.199.224.230:7002/user/get_oauth_data',
                 data: { from: 'mini' }
             })
         } catch (e) {
@@ -137,7 +137,7 @@ Page({
             let res
             try {
                 res = await wxRequest({
-                    url: 'http://10.22.26.169:7002/user/info',
+                    url: 'http://139.199.224.230:7002/user/info',
                     method: 'POST',
                     header: { skey: this.skey.skey }
                 })
@@ -149,7 +149,7 @@ Page({
                 console.log('user_info', res.data.user_info)
                 this.setData({ info: res.data.user_info })
                 wx.navigateTo({
-                    url: '../dayline/index1'
+                    url: '../index1/index'
                 })
             }
             else {

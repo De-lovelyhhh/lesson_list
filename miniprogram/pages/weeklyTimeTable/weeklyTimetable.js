@@ -1,7 +1,6 @@
 import regeneratorRuntime from '../../utils/third-party/runtime' // eslint-disable-line
 import { wxRequest } from '../../utils/lib/wxApi'
 import { throwError } from '../../utils/lib/error'
-// todo 接入框架
 Page({
     lessonData: '',
     curWeek: '',
